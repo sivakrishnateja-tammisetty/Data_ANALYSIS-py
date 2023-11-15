@@ -101,4 +101,112 @@ Note:I written above code in jupiter note book.
 5. METHODS TO VIEW FILE:
    ---------------------
 
+* head(value) =>It displays the first  given no.of rows,which are present in the file.
+   Eg:df.head(5)
+
+
+* tail(value) =>It display the last given no.of rows,which are present in the file.
+   Eg: df.tail(5)
+
+
+* To save file:
+   df.to_fileformat(path)
+   Eg: df.to_csv(path)
+
+
+* To view the datatypes of the file.
+    Eg:df.dtypes
+
+
+   Note:object referes numbers in string & int64 refers integer.
+
+
+* df.describe()
+   These helps us to return statical summary.
+
+
+* df.describe(include="all")
+   These helps us to return full statical summary.
+
+
+
+* df.info()
+   It provides concise summary of our dataframe(df).like how many entiries and  total no.of columns.
+
+
+* df.columns
+   It displays the columns which are occupied & dtatype of column are also displayed.
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6. DATA CLEANING:
+   -------------
+
+* How to import excel file?
+* pre-processing means convert raw data into summarize data.
+
+
+Eg:
+import pandas as pd
+path="c:/users/krishna/project//data analysis/auto-mpg.xlsx"
+df=pd.read_excel(path)
+print(df)
+
+
+
+* To change headers in my excel file:
+
+ Eg:
+   headers=["s.no","Even","Odd","Multiples 5","multiples 4"]
+   df.columns=headers
+   df.head(5)
+
+
+
+* To change odd colum to even numbers:
+
+   Eg:
+   df["Odd"]=df["Odd"]+1
+   df.head(5)
+
+
+
+* To remove row for excel :
+
+    df.drop([label/row number],axis=0)
+
+   Eg:
+   df.drop([10],axis=0)
+
+
+   Note: here axis=0 is row & axis=1 is column
+
+                                    (OR)
+   Eg: df.dropna()
+      It will remove NAN entire row
+
+
+
+
+* To replace NAN value to another number:
+
+   we need to imort numpy library
+   df["column"].replace(np.nan,new value)
+
+   Eg:
+   import numpy as np
+   df["Even"].replace(np.nan,22)
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+7. DATA FORMATTING:
+   ---------------
+
+ 
 
