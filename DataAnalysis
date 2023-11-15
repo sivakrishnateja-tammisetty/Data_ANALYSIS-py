@@ -9,3 +9,96 @@
   *Cleaning of data  ==> Erasing  all unnecessary data.
 
   *Summarisation of data ==>It hepls the user to view the graph and get better clarity of the product. 
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. INSTALLING ANACONDA:
+   --------------------
+   *compare to pycharm ,Anaconda is user-friendy.
+   *For the data analysis, we are using jupiter notebook.
+
+step1 : download anaconda (Chrome)
+step2 : open first link
+step3:Anaconda Installers(for windows)
+step4: search navigator(you find anaconda navigator).
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. LIBRARIES IMPORTANT PROPERITIES:
+   ----------------------------------
+ 
+
+                TITLE                                                   LIBRARIES
+         -------------------------------------------------------------------------------
+      1.Scientific computing Libraries                                pandas,numpy,sci-py
+
+      2. visualization Libraries                                      Matlplotlib,seaborn,
+
+      3. ALGORITHMIC LIBRARIES                                        scikit Learn, stats models
+
+
+
+
+
+
+
+
+  *PANDAS are probablly known as 2-D arrays.They can be used for data frames and in case of data structures.
+   *NUMPY are used for the purpose of arrays and matrics.
+   * SCI-PY are used for the purpose of integral and differential equations.
+
+ *MATPLOTLIB are used for plotting graphs.
+ *SEABORN are used for plotting graphs,but we can plot different graphs.
+
+ *SCIKIT LEARN are mostly prefered for machine learning concepts.
+ *STATS MODELS are used to explore data used for statical models and perform statical test.
+
+
+
+
+
+
+IMPORTANT PROPERITIES:
+--------------------
+   *Two important properities for importing the data.
+
+      *FILE FORMAT:
+         (.csv, .json, .hdf, .xlsx, ......)
+
+      *FILE PATH:
+         (C:/Desktop/Myfiles/mydata.csv)
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. IMPORTING CSV FILES:
+   -------------------
+   *from (kaggle.com or google cloud public datasets ) site we can download datasets.
+
+   *we are import csv file from python using jupiter notebook.
+
+
+
+
+
+   Eg1:
+
+   import pandas as pd
+   path="c:/users/krishna/project//data analysis/auto-mpg.csv"
+   df=pd.read_csv(path)
+   print(df)
+
+
+Note:I written above code in jupiter note book.
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. METHODS TO VIEW FILE:
+   ---------------------
+
+
