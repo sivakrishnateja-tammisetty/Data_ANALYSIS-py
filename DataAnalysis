@@ -207,6 +207,40 @@ print(df)
 
 7. DATA FORMATTING:
    ---------------
+   *Data formatting is nothing but just applying calculations  to our columns and renaming the column name and checking datatype of our data
 
- 
+
+   *I want to change" multiples of 4" column into "multiples of 2".
+
+      Here iam changing data present in multiples of 4 column
+
+      df["column"]=df["column"]/2
+
+      Eg:
+      df["multiples of 4"]=df["multiples of 4"]/2
+
+
+
+   *Renaming column name into other name
+
+   df.rename(columns={"old column name":"new column name"})
+
+   Eg: 
+      df.rename(columns={"multiples of 2":"Multiples of 2"})
+
+
+
+
+
+
+*Converting from one datatype to another datatype for a particular column.
+
+   df["column']=df["colum"].astype("datatype")
+   Eg:
+   df["multiples of 4"]=df["multiples of 4"].astype("int")
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
